@@ -28,7 +28,7 @@ const updateProgressBar = (val) => {
     const max = target.max;
     target.style.backgroundSize = (val - min) * 100 / (max - min) + "% 100%"
 }
-updateProgressBar(3)
+updateProgressBar(4)
 
 // change line width
 linewidth.addEventListener('input', (e)=>{
@@ -69,23 +69,23 @@ clear.addEventListener('click', ()=>{
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 })
 clear.addEventListener('mouseenter', ()=>{
-    clearImg.src = './erase_white.png'
+    clearImg.src = './static/erase_white.png'
 })
 clear.addEventListener('mouseleave', ()=>{
-    clearImg.src = './erase_red.png'
+    clearImg.src = './static/erase_red.png'
 })
 brush.addEventListener('mouseenter', ()=>{
-    brushImg.src = './brush_white.png'
+    brushImg.src = './static/brush_white.png'
 })
 brush.addEventListener('mouseleave', ()=>{
-    brushImg.src = './brush_red.png'
+    brushImg.src = './static/brush_red.png'
 })
 tools.addEventListener('mouseenter', ()=>{
-    brushImg.src = './brush_white.png'
+    brushImg.src = './static/brush_white.png'
     brush.classList.add('active');
 })
 tools.addEventListener('mouseleave', ()=>{
-    brushImg.src = './brush_red.png'
+    brushImg.src = './static/brush_red.png'
     brush.classList.remove('active');
 })
 brush.addEventListener('click', ()=>{
