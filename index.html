@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="control">
+        <button id="clear" class="clear"><img src="./erase_red.png" alt=""></button>
+        <div id="openBox" class="openBox">
+            <img src="./brush_red.png" alt="" id="openBoxImg">
+        </div>
+        <div id="opened" class="opened">
+            <div id="color" class="color">
+                <span for="linecolor" id="linecolorLabel">Line Color :</span>
+                <input type="color" name="linecolor" id="linecolor" value="#ff0000">
+            </div>
+            <div id="divider" class="divider"></div>
+            <div id="width" class="width">
+                <span for="linewidth" id="linewidthLabel">Line Thickness: 4</span>
+                <input type="range" name="linewidth" id="linewidth" value="4" min="1" max="15">
+            </div>
+        </div>
+    </div>
+    <canvas id="draw" width="2000" height="2000"></canvas>
+</body>
+<script src="script.js"></script>
+
+</html>
