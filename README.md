@@ -6,7 +6,7 @@ A whiteboard made with pure HTML, CSS and JavaScript
 * [Setup](#setup)
 * [Contribution](#contribution)
 ## Preview
-For whiteboard preview you can visit [Antique Whiteboard](https://arvindsaini978.github.io/antique-whiteboard/)
+For live preview of whiteboard you can visit [Antique Whiteboard](https://antique-whiteboard.onrender.com).
 ## Technologies 
 * HTML
 * CSS
